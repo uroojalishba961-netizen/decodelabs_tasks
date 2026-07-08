@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Mirch Masala</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__logo">Mirch<span class="site-header__logo-dot">&nbsp;Masala</span></div>
+    <nav class="site-header__nav" aria-label="Main navigation">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="menu.html">Menu</a>
+      <a class="nav__link nav__link--active" href="about.html">About</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <!-- ============ the ONE h1 on this page ============ -->
+      <h1 class="page-intro__title">Our Story</h1>
+      <p class="page-intro__text">Three generations, one kitchen, countless family recipes.</p>
+    </section>
+
+    <section class="about-content">
+      <img class="about-content__image" src="images/Our Kitchen.jpg.jpg"
+           width="700" height="350" alt="Chefs preparing food together in the Mirch Masala kitchen">
+      <p class="about-content__text">
+        Mirch Masala started in 1995 as a small family-run kitchen serving home-style food
+        to neighbours in Hazratganj. What began as five tables has grown into a full
+        restaurant, but the philosophy hasn't changed: every dish is cooked the way our
+        grandmother used to make it — fresh spices, ground daily, and recipes that were
+        never written down, only passed on.
+      </p>
+      <p class="about-content__text">
+        Today, our kitchen is run by the same family, three generations deep, and every
+        plate that leaves it carries that same care.
+      </p>
+    </section>
+
+    <!-- ============ TEAM — Flexbox row ============ -->
+    <section class="team">
+      <h2 class="section-title">Meet the Team</h2>
+      <div class="team-grid">
+
+        <article class="team-card">
+          <img class="team-card__photo" src="images/Chef.jpg.jpg"
+               width="180" height="180" alt="Portrait of Head Chef Aslam Khan">
+          <h3 class="team-card__name">Aslam Khan</h3>
+          <p class="team-card__role">Head Chef</p>
+        </article>
+
+        <article class="team-card">
+          <img class="team-card__photo" src="images/Manager.jpg.jpg"
+               width="180" height="180" alt="Portrait of Restaurant Manager Sana Iqbal">
+          <h3 class="team-card__name">Sana Iqbal</h3>
+          <p class="team-card__role">Restaurant Manager</p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__text">
+      📍 Mehria Town, Attock &nbsp;|&nbsp;
+      📞 <a class="footer-link" href="tel:+928933006408">+92 89330 06408</a>
+    </p>
+    <p class="site-footer__copy"></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Signup — Form Validation</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="sheet">
+
+    <header class="sheet__header">
+     
+      <h1>Create your account</h1>
+      <p class="sub">Every field is checked live, and again on submit — nothing reaches the server until it's valid.</p>
+    </header>
+
+    <form id="js-signup-form" novalidate>
+
+      <!-- Full Name -->
+      <div class="field">
+        <label for="name">Full name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="js-input"
+          data-rule="name"
+          aria-describedby="name-error"
+          autocomplete="name"
+        />
+        <span class="field-icon" aria-hidden="true"></span>
+        <span class="error-msg" id="name-error" role="alert"></span>
+      </div>
+
+      <!-- Email -->
+      <div class="field">
+        <label for="email">Email address</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          class="js-input"
+          data-rule="email"
+          aria-describedby="email-error"
+          autocomplete="email"
+        />
+        <span class="field-icon" aria-hidden="true"></span>
+        <span class="error-msg" id="email-error" role="alert"></span>
+      </div>
+
+      <!-- Password -->
+      <div class="field">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="js-input"
+          data-rule="password"
+          aria-describedby="password-error password-hint"
+          autocomplete="new-password"
+        />
+        <span class="field-icon" aria-hidden="true"></span>
+        <span class="error-msg" id="password-error" role="alert"></span>
+
+        <ul class="hint-list" id="password-hint">
+          <li data-check="length">At least 8 characters</li>
+          <li data-check="upper">One uppercase letter</li>
+          <li data-check="lower">One lowercase letter</li>
+          <li data-check="number">One number</li>
+          <li data-check="special">One special character</li>
+        </ul>
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="field">
+        <label for="confirm-password">Confirm password</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          class="js-input"
+          data-rule="confirm-password"
+          aria-describedby="confirm-password-error"
+          autocomplete="new-password"
+        />
+        <span class="field-icon" aria-hidden="true"></span>
+        <span class="error-msg" id="confirm-password-error" role="alert"></span>
+      </div>
+
+      <button type="submit" class="submit-btn js-submit-btn">Submit</button>
+
+      <!-- Live region: announces overall form status politely -->
+      <div class="form-status" id="js-form-status" aria-live="polite"></div>
+
+    </form>
+
+    <!-- Shown only after a fully valid submission -->
+    <section class="payload" id="js-payload" hidden aria-labelledby="payload-heading">
+      <p class="payload__label" id="payload-heading">Approved Payload — packaged as JSON</p>
+      <pre class="payload__body" id="js-payload-body"></pre>
+    </section>
+
+    <footer class="sheet__footer">All validation runs locally in your browser</footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

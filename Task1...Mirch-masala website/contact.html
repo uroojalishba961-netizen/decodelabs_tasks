@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Mirch Masala</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__logo">Mirch<span class="site-header__logo-dot">&nbsp;Masala</span></div>
+    <nav class="site-header__nav" aria-label="Main navigation">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="menu.html">Menu</a>
+      <a class="nav__link" href="about.html">About</a>
+      <a class="nav__link nav__link--active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <!-- ============ the ONE h1 on this page ============ -->
+      <h1 class="page-intro__title">Visit Us</h1>
+      <p class="page-intro__text">Walk in, call ahead, or reserve a table below.</p>
+    </section>
+
+    <!-- ============ INFO + FORM — two-column CSS Grid ============ -->
+    <section class="contact-layout">
+
+      <div class="contact-info">
+        <h2 class="contact-info__title">Location &amp; Hours</h2>
+        <p class="contact-info__text">📍 Mehria Town, Attock</p>
+        <p class="contact-info__text">📞 <a class="footer-link" href="tel:+928933006408">+92 89330 06408</a></p>
+        <p class="contact-info__text">✉ <a class="footer-link" href="mailto:hello@mirchmasala.example">hello@mirchmasala.example</a></p>
+
+        <h3 class="contact-info__subtitle">Opening Hours</h3>
+        <ul class="hours-list">
+          <li class="hours-list__item"><span>Mon – Fri</span><span>12:00 PM – 11:00 PM</span></li>
+          <li class="hours-list__item"><span>Sat – Sun</span><span>11:00 AM – 11:30 PM</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" action="#" method="post">
+        <h2 class="contact-form__title">Reserve a Table</h2>
+
+        <div class="form-group">
+          <label class="form-group__label" for="name">Full Name</label>
+          <input class="form-group__input" type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-group__label" for="phone">Phone Number</label>
+          <input class="form-group__input" type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-group__label" for="date">Date</label>
+          <input class="form-group__input" type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-group__label" for="guests">Number of Guests</label>
+          <input class="form-group__input" type="number" id="guests" name="guests" min="1" max="20" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-group__label" for="message">Special Requests</label>
+          <textarea class="form-group__input form-group__input--textarea" id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <button class="button button--primary" type="submit">Confirm Reservation</button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__text">
+      📍 Mehria Town, Attock&nbsp;|&nbsp;
+      📞 <a class="footer-link" href="tel:+928933006408">+92 89330 06408</a>
+    </p>
+    <p class="site-footer__copy"></p>
+  </footer>
+
+</body>
+</html>
