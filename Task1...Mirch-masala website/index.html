@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mirch Masala — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER (same on every page) — Flexbox ============ -->
+  <header class="site-header">
+    <div class="site-header__logo">Mirch<span class="site-header__logo-dot">&nbsp;Masala</span></div>
+    <nav class="site-header__nav" aria-label="Main navigation">
+      <a class="nav__link nav__link--active" href="index.html">Home</a>
+      <a class="nav__link" href="menu.html">Menu</a>
+      <a class="nav__link" href="about.html">About</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO: the ONE h1 on this page ============ -->
+    <section class="hero">
+      <img class="hero__image" src="images/restaurant-hero.jpg.jpg"
+     width="1100" height="450" alt="Warmly lit dining hall at Mirch Masala restaurant">
+      <div class="hero__content">
+        <h1 class="hero__title">Mirch Masala</h1>
+        <p class="hero__subtitle">Home-style flavours, served with care since day one.</p>
+        <a class="button button--primary" href="menu.html">View Menu</a>
+        <a class="button button--secondary" href="contact.html">Reserve a Table</a>
+      </div>
+    </section>
+
+    <!-- ============ HIGHLIGHTS: CSS Grid macro layout ============ -->
+    <section class="highlights">
+      <h2 class="section-title">Why Guests Come Back</h2>
+      <div class="highlight-grid">
+
+        <article class="highlight-card">
+          <h3 class="highlight-card__title">Fresh, Daily Ingredients</h3>
+          <p class="highlight-card__text">Vegetables and spices sourced every morning — nothing sits in a freezer here.</p>
+        </article>
+
+        <article class="highlight-card">
+          <h3 class="highlight-card__title">Family Recipes</h3>
+          <p class="highlight-card__text">Every dish on our menu is built from a recipe passed down through three generations.</p>
+        </article>
+
+        <article class="highlight-card">
+          <h3 class="highlight-card__title">Warm, Cozy Seating</h3>
+          <p class="highlight-card__text">Whether it's a quiet dinner or a big family gathering, there's a table for you.</p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER (same on every page) ============ -->
+  <footer class="site-footer">
+    <p class="site-footer__text">
+      📍 Mehria Town, Attock &nbsp;|&nbsp;
+      📞 <a class="footer-link" href="tel:+928933006408">+92 89330 06408</a>
+    </p>
+    <p class="site-footer__copy"></p>
+  </footer>
+
+</body>
+</html>

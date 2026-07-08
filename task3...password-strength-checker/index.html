@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Password Strength Checker</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="card">
+    <p class="eyebrow">DecodeLabs // Project 3</p>
+    <h1>Password Strength Checker</h1>
+    <p class="sub">Type a password below. Every rule updates live as you type — nothing to submit.</p>
+
+    <div class="field">
+      <input
+        type="password"
+        id="js-password-input"
+        placeholder="Enter a password"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button type="button" class="toggle-visibility js-toggle-visibility" aria-label="Show password">Show</button>
+    </div>
+
+    <div class="meter" id="js-meter">
+      <div class="segment"></div>
+      <div class="segment"></div>
+      <div class="segment"></div>
+      <div class="segment"></div>
+    </div>
+
+    <div class="status-row">
+      <span class="status-label" id="js-status-label">Enter a password</span>
+      <span class="status-tag" id="js-status-tag">—</span>
+    </div>
+
+    <ul class="checklist" id="js-checklist">
+      <li data-rule="length"><span class="mark">✓</span> At least 8 characters</li>
+      <li data-rule="upper"><span class="mark">✓</span> One uppercase letter</li>
+      <li data-rule="number"><span class="mark">✓</span> One number</li>
+      <li data-rule="special"><span class="mark">✓</span> One special character</li>
+    </ul>
+
+    <footer>All checks run locally in your browser</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
